@@ -1,6 +1,12 @@
-Strategy for finding a palindromic pangram:
+# Palindromic Pangram
 
-A palindrome can be constructed by taking a list of single-word palindromes and appending that same list in reverse order.  Therefore, the first step involves checking to see if each letter in the alphabet can be found in a single-word palindrome.
+Author: Daniel Riehs
+
+This Java program searches for a series of words that contain all of the letters in the alphabet, and read the same backwards and forwards. The program would not work on any arbitrary list of words, and it makes a number of assumptions about words in the English language.
+
+Here is the strategy that the program uses:
+
+A palindrome can be constructed by taking a list of single-word palindromes and appending that same list in reverse order. Therefore, the first step involves checking to see if each letter in the alphabet can be found in a single-word palindrome.
 
 We then loop through the letters that are not found in palindromes and search for multiple-word palindromes.
 
