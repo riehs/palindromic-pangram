@@ -2,7 +2,7 @@
 
 Author: Daniel Riehs
 
-This Java program searches for a series of words that contain all of the letters in the alphabet, and read the same backwards and forwards. The program would not work on any arbitrary list of words, and it makes a number of assumptions about words in the English language.
+This Java program searches for a series of words that contain all of the letters in the alphabet and reads the same backwards and forwards. The program will not work on any arbitrary list of words, and it makes a number of assumptions about words in the English language.
 
 Here is the strategy that the program uses:
 
