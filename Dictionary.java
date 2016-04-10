@@ -165,8 +165,12 @@ public class Dictionary
 			BufferedReader bf2 = new BufferedReader(
 				 new FileReader(fileName));
 
-			for (int i = 0;(word = bf2.readLine()) != null; i++)
-				wordArray[i] = new Word(word);
+			try {
+				for (int i = 0;(word = bf2.readLine()) != null; i++)
+					wordArray[i] = new Word(word);
+			} finally {
+				bf2.close();
+			}
 
 		} catch (Exception e) {System.err.println("Unable to read from " + fileName);}
 
