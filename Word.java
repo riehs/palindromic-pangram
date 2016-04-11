@@ -12,7 +12,7 @@ class Word implements Comparable
 		length = word.length();
 	}
 
-	// Neccessary for sorting by length:
+	// Necessary for sorting by length:
 	public int compareTo(Object w)
 	{
 		if (((Word)w).getLength() > length)
