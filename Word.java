@@ -1,4 +1,4 @@
-class Word implements Comparable
+class Word implements Comparable<Word>
 {
 	private String word;
 	private String backwards;
@@ -13,11 +13,11 @@ class Word implements Comparable
 	}
 
 	// Necessary for sorting by length:
-	public int compareTo(Object w)
+	public int compareTo(Word w)
 	{
-		if (((Word)w).getLength() > length)
+		if (w.getLength() > length)
 			return -1;
-		if (((Word)w).getLength() < length)
+		if (w.getLength() < length)
 			return 1;
 		return 0;
 	}
